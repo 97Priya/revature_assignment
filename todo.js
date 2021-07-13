@@ -83,7 +83,11 @@ class Todo {
   console.log("checking my to do list after editing item-2 as item-two...................");
   todoService.viewTodos('ALL');
   todoService.completeTodo(3);
-  console.log("checking my to do list after adding 6 items...................");
+  console.log("checking my to do list after completing items-3...................");
   todoService.viewTodos('ALL');
+  console.log("checking my to do list after deleting  items-2...................");
   todoService.deleteTodo(2);
+  todoService.viewTodos('ALL');
+  todoService.completeAll();
+  console.log("checking my to do list after completing all...................");
   todoService.viewTodos('ALL');
